@@ -25,7 +25,7 @@
     "verification_source": "https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.10.17-25c9b49f.tar.gz.asc",
     "extract_command": "tar -C backend --strip 1 -xf",
     "exclude_files": [],
-    "exec_command_template": "/bin/sh -c '{{.Env.BackendInstallPath}}/{{.Coin.Alias}}/geth --syncmode 'full' --datadir {{.Env.BackendDataPath}}/{{.Coin.Alias}}/backend --port 40605 --http --http.port 3545 -http.addr 0.0.0.0 --http.corsdomain \"*\" --http.vhosts \"*\"--ws --ws.addr 127.0.0.1 --ws.port {{.Ports.BackendRPC}} --ws.origins \"*\" --bootnodes enode://bab5d43f3ad9612f909547fa754b955c0509a11a55c7f067b5bdc434b5fb6cea363c193c6c00557bc90267da7aef3a5997c376754f6df2d6817cf52c90d1852e@54.251.84.204:40605 --networkid 32520  2>>{{.Env.BackendDataPath}}/{{.Coin.Alias}}/backend/{{.Coin.Alias}}.log'",
+    "exec_command_template": "/bin/sh -c '{{.Env.BackendInstallPath}}/{{.Coin.Alias}}/geth --datadir {{.Env.BackendDataPath}}/{{.Coin.Alias}}/backend --port 40605 --ws --ws.addr 127.0.0.1 --ws.port {{.Ports.BackendRPC}} --ws.origins \"*\" --http --http.port 8164 -http.addr 127.0.0.1 --http.corsdomain \"*\" --http.vhosts \"*\" --bootnodes enode://bab5d43f3ad9612f909547fa754b955c0509a11a55c7f067b5bdc434b5fb6cea363c193c6c00557bc90267da7aef3a5997c376754f6df2d6817cf52c90d1852e@54.251.84.204:40605 --networkid 32520  2>>{{.Env.BackendDataPath}}/{{.Coin.Alias}}/backend/{{.Coin.Alias}}.log'",
     "logrotate_files_template": "{{.Env.BackendDataPath}}/{{.Coin.Alias}}/backend/{{.Coin.Alias}}.log",
     "postinst_script_template": "",
     "service_type": "simple",
