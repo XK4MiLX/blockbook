@@ -177,6 +177,9 @@ func (b *EthereumRPC) Initialize() error {
 	case PolygonTestNet:
 		b.Testnet = true
 		b.Network = "Polygon_testnet"
+	case BriseNet:
+	        b.Testnet = false
+		b.Network = "livenet"
 	default:
 		return errors.Errorf("Unknown network id %v", id)
 	}
