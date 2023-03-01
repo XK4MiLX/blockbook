@@ -13,6 +13,7 @@
 
 ## Build and installation instructions
 
+
 Officially supported platform is **Debian Linux** and **AMD64** architecture.
 
 Memory and disk requirements for initial synchronization of **Bitcoin mainnet** are around 32 GB RAM and over 180 GB of disk space. After initial synchronization, fully synchronized instance uses about 10 GB RAM.
