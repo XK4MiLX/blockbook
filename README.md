@@ -26,6 +26,7 @@ Developer build guide is [here](/docs/build.md).
 
 Contribution guide is [here](CONTRIBUTING.md).
 
+
 ## Implemented coins
 
 Blockbook currently supports over 30 coins. The Trezor team implemented 
