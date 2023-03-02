@@ -132,6 +132,7 @@ func init() {
 	BlockChainFactories["Hydra"] = hydra.NewHydraRPC
 	BlockChainFactories["Polygon"] = eth.NewEthereumRPC
 	BlockChainFactories["Polygon TestNet"] = eth.NewEthereumRPC
+	BlockChainFactories["Brise"] = eth.NewEthereumRPC
 	BlockChainFactories["Arbitrum"] = eth.NewEthereumRPC
 	BlockChainFactories["Arbitrum TestNet"] = eth.NewEthereumRPC
 }
