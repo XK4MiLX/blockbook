@@ -45,6 +45,7 @@ import (
 	"github.com/trezor/blockbook/bchain/coins/polis"
 	"github.com/trezor/blockbook/bchain/coins/qtum"
 	"github.com/trezor/blockbook/bchain/coins/ravencoin"
+	"github.com/trezor/blockbook/bchain/coins/sin"
 	"github.com/trezor/blockbook/bchain/coins/ritocoin"
 	"github.com/trezor/blockbook/bchain/coins/snowgem"
 	"github.com/trezor/blockbook/bchain/coins/trezarcoin"
@@ -115,6 +116,7 @@ func init() {
 	BlockChainFactories["VIPSTARCOIN"] = vipstarcoin.NewVIPSTARCOINRPC
 	BlockChainFactories["Flux"] = zec.NewZCashRPC
 	BlockChainFactories["Ravencoin"] = ravencoin.NewRavencoinRPC
+	BlockChainFactories["Sinovate"] = sin.NewSinovateRPC
 	BlockChainFactories["Ritocoin"] = ritocoin.NewRitocoinRPC
 	BlockChainFactories["Divi"] = divi.NewDiviRPC
 	BlockChainFactories["CPUchain"] = cpuchain.NewCPUchainRPC
@@ -131,6 +133,8 @@ func init() {
 	BlockChainFactories["Polygon"] = eth.NewEthereumRPC
 	BlockChainFactories["Polygon TestNet"] = eth.NewEthereumRPC
 	BlockChainFactories["Brise"] = eth.NewEthereumRPC
+	BlockChainFactories["Arbitrum"] = eth.NewEthereumRPC
+	BlockChainFactories["Arbitrum TestNet"] = eth.NewEthereumRPC
 }
 
 // GetCoinNameFromConfig gets coin name and coin shortcut from config file

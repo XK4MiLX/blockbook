@@ -37,6 +37,10 @@ const (
 	PolygonNet EthereumNet = 137
 
 	PolygonTestNet EthereumNet = 80001
+
+	ArbitrumNet EthereumNet = 42161
+
+	ArbitrumTestNet EthereumNet = 421611
 )
 
 // Configuration represents json config file
@@ -174,6 +178,12 @@ func (b *EthereumRPC) Initialize() error {
 	case PolygonNet:
 		b.Testnet = false
 		b.Network = "polygon_mainnet"
+	case ArbitrumNet:
+		b.Testnet = false
+		b.Network = "arbitrum_mainnet"
+	case ArbitrumTestNet:
+		b.Testnet = true
+		b.Network = "arbitrum_testnet"
 	case PolygonTestNet:
 		b.Testnet = true
 		b.Network = "Polygon_testnet"
