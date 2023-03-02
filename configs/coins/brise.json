@@ -32,7 +32,8 @@
     "service_additional_params_template": "",
     "protect_memory": true,
     "mainnet": true,
-    "geth_init_url": "https://raw.githubusercontent.com/Bitgert/brise-chain/master/brise_mainnet.json",
+    "geth_init_url": "https://raw.githubusercontent.com/XK4MiLX/brise-node/main/brise_mainnet.json
+    "static_nodes_url": "https://raw.githubusercontent.com/XK4MiLX/brise-node/main/static-nodes.json",
     "server_config_file": "",
     "client_config_file": ""
   },
